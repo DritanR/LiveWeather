@@ -40,8 +40,7 @@ function App() {
       {!loading ? (
         <>
           <TextField
-            variant="filled"
-            label="Search location"
+            label="Search"
             className="input"
             error={error}
             value={inputText}
@@ -61,9 +60,10 @@ function App() {
 
           <Slide direction="right" timeout={800} in={!loading}>
             <div className="box_container">
+
               <div className="box">
-                <p>Humidity</p>
-                <h1>{data.main.humidity.toFixed()}%</h1>
+                <p>Feels Like</p>
+                <h1>{data.main.feels_like.toFixed()} °C</h1>
               </div>
 
               <div className="box">
@@ -72,9 +72,10 @@ function App() {
               </div>
 
               <div className="box">
-                <p>Feels Like</p>
-                <h1>{data.main.feels_like.toFixed()} °C</h1>
+                <p>Humidity</p>
+                <h1>{data.main.humidity.toFixed()}%</h1>
               </div>
+
             </div>
           </Slide>
         </>

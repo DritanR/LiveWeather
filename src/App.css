@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Unbounded", cursive;
+  font-family: "", cursive;
 }
 
 body {
@@ -24,6 +24,7 @@ body {
 
 .input {
   background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
 }
 
 .group {
@@ -31,6 +32,7 @@ body {
   gap: 10px;
   align-items: center;
   margin: 1rem 0;
+  color: rgb(179, 179, 253);
 }
 
 .city {
@@ -40,6 +42,7 @@ body {
 .city,
 .temp {
   font-size: 3rem;
+  color: rgb(179, 179, 253);
 }
 
 .box_container {
@@ -53,17 +56,12 @@ body {
 .box {
   padding: 1rem;
   border-radius: 12px;
-  background-color: rgb(145, 145, 145);
+  color: rgb(179, 179, 253);
   width: 220px;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  transition: transform 0.2s;
-}
-
-.box:hover {
-  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 730px) {
